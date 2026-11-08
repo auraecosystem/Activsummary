@@ -31,8 +31,12 @@
                 "quicwg/qlog",
                 "quicwg/quic-v2",
                 "quicwg/multipath",
-		"quicwg/ack-frequency",
-		"quicwg/reliable-stream-reset"
+                "quicwg/ack-frequency",
+                "quicwg/reliable-stream-reset",
+                "quicwg/qmux",
+                "quicwg/receive-ts",
+                "quicwg/extended-key-update",
+                "quicwg/address-discovery"
             ],
             "topic": "QUIC Activity Summary"
         }
@@ -42,41 +46,50 @@
             "repos": [
                 "tlswg/certificate-compression",
                 "tlswg/dnssec-chain-extension",
-		"tlswg/draft-deprecate-obsolete-kex",
-		"tlswg/draft-ietf-tls-cert-abridge",
+                "tlswg/draft-deprecate-obsolete-kex",
+                "tlswg/draft-ietf-tls-cert-abridge",
                 "tlswg/draft-ietf-tls-ctls",
-		"tlswg/draft-ietf-tls-ecdhe-psk-aead",
-		"tlswg/draft-ietf-tls-ech-keylogfile",
-		"tlswg/draft-ietf-tls-esni",
+                "tlswg/draft-ietf-tls-ecdhe-psk-aead",
+                "tlswg/draft-ietf-tls-ech-keylogfile",
+                "tlswg/draft-ietf-tls-esni",
                 "tlswg/draft-ietf-tls-external-psk-importer",
-		"tlswg/draft-ietf-tls-grease",
-		"tlswg/draft-ietf-tls-iana-registry-updates",
+                "tlswg/draft-ietf-tls-grease",
+                "tlswg/draft-ietf-tls-iana-registry-updates",
                 "tlswg/draft-ietf-tls-md5-sha1-deprecate",
-		"tlswg/draft-ietf-tls-semistatic-dh",
-		"tlswg/draft-ietf-tls-svcb-ech",
+                "tlswg/draft-ietf-tls-mlkem",
+                "tlswg/draft-ietf-tls-semistatic-dh",
+                "tlswg/draft-ietf-tls-svcb-ech",
                 "tlswg/draft-ietf-tls-ticketrequest",
-		"tlswg/draft-ietf-tls-tls13-vectors",
+                "tlswg/draft-ietf-tls-tls13-vectors",
                 "tlswg/dtls-conn-id",
-		"tlswg/dtls-rrc",
+                "tlswg/dtls-rrc",
                 "tlswg/dtls13-spec",
-                "tlswg/oldversions-deprecate",
-		"tlswg/rfc4492bis",
-		"tlswg/rfc8447bis",
+				"tlswg/oldversions-deprecate",
+                "tlswg/rfc4492bis",
+                "tlswg/rfc8447bis",
+                "tlswg/rfc8773bis",
                 "tlswg/sniencryption",
-		"tlswg/sslkeylogfile",
-		"tlswg/sslv3-diediedie",
-		"tlswg/super-jumbo-record-limit",
-		"tlswg/tls13-spec",
-		"tlswg/tls-exported-authenticator",
-		"tlswg/tls-flags",
-		"tlswg/tls-key-share-prediction",
-		"tlswg/tls-key-update",
-		"tlswg/tls-record-limit",
-		"tlswg/tls-subcerts",
-		"tlswg/tls12-frozen",
-		"tlswg/tls13-pkcs1",
-		"tlswg/tls13-rfc"
-            ],
+                "tlswg/sslkeylogfile",
+                "tlswg/sslv3-diediedie",
+                "tlswg/super-jumbo-record-limit",
+                "tlswg/tls-ecdhe-mlkem",
+                "tlswg/tls-exported-authenticator",
+                "tlswg/tls-fatt",
+                "tlswg/tls-flags",
+                "tlswg/tls-key-share-prediction",
+                "tlswg/tls-key-update",
+                "tlswg/tls-mldsa",
+                "tlswg/tls-pake",
+				"tlswg/tls-record-limit",
+                "tlswg/tls-subcerts",
+                "tlswg/tls-trust-anchor-ids",
+                "tlswg/tls12-frozen",
+				"tlswg/tls13-pkcs1",
+                "tlswg/tls13-rfc",
+				"tlswg/tls13-spec",
+				"tlswg/tlswg-wiki",
+				"tlswg/tlswg-wkesni"
+			],
             "topic": "TLS Working Group Drafts"
         }
     },
@@ -107,15 +120,12 @@
                 ]
             },
             "repos": [
-                 "afrind/moqbof",
                  "moq-wg/moq-charter",
                  "moq-wg/moq-transport",
                  "moq-wg/moq-requirements",
                  "moq-wg/warp-streaming-format",
-                 "moq-wg/wg-materials",
-                 "Quicr/quicr-arch-spec",
-                 "Quicr/quicr-protocol-spec",
-                 "kixelated/warp-draft"
+                 "moq-wg/loc",
+                 "moq-wg/wg-materials"
             ],
             "topic": "Media Over QUIC Activity Summary"
         }
@@ -124,14 +134,26 @@
         "digest:sunday": {
             "repos": [
                 "mlswg/mls-architecture",
-                "mlswg/mls-protocol",
+				"mlswg/mls-combiner",
+				"mlswg/mls-extensions",
                 "mlswg/mls-federation",
-		"mlswg/mls-extensions",
-		"mlswg/mls-implementations",
-		"mlswg/mls-combiner"
+				"mlswg/mls-implementations",
+				"mlswg/mls-partial",
+				"mlswg/mls-protocol",
+				"mlswg/mls-ratchet-tree-options",
+				"mlswg/mls-targeted-messages"
             ],
             "topic": "MLS Working Group summary"
         }
+    },
+    "hpke@ietf.org": {
+      "digest:sunday": {
+            "repos": [
+                "hpkewg/hpke",
+		"hpkewg/hpke-pq"
+            ],
+            "topic": "HPKE Working Group"
+      }
     },
     "masque@ietf.org": {
         "digest:sunday": {
@@ -365,22 +387,28 @@
         "digest:sunday": {
             "repos": [
                 "lake-wg/edhoc",
-                "lake-wg/authz"
+                "lake-wg/authz",
+                "lake-wg/edhoc-impl-cons",
+                "lake-wg/app-profiles",
+                "lake-wg/grease",
+                "lake-wg/psk",
+                "lake-wg/ra",
+                "lake-wg/pqsuites",
+                "lake-wg/authkem"
             ],
             "topic": "LAKE Working Group Activity Summary"
         }
     },
-    "alto@ietf.org": {
+   "scone@ietf.org": {
         "digest:sunday": {
             "eventFilter": {
                 "notlabel": []
             },
             "repos": [
-                "ietf-wg-alto/draft-ietf-alto-oam-yang",
-		"ietf-wg-alto/draft-ietf-alto-new-transport",
-		"ietf-wg-alto/wg-materials"
+                "ietf-wg-scone/scone",
+				"ietf-wg-scone/appman"
             ],
-            "topic": "ALTO Github Activity Summary"
+            "topic": "SCONE Github Activity Summary"
         }
     },
     "eligibility-discuss@ietf.org": {
@@ -402,10 +430,14 @@
     "avt@ietf.org": {
         "digest:sunday": {
             "repos": [
-                "mengelbart/rtp-over-quic-draft",
+                "ietf-wg-avtcore/draft-ietf-avtcore-rtp-over-quic",
 		"ietf-wg-avtcore/draft-ietf-avtcore-rtp-haptics",
 		"ietf-wg-avtcore/draft-ietf-avtcore-rtp-j2k-scl",
-		"ietf-wg-avtcore/draft-ietf-avtcore-hevc-webrtc"
+		"ietf-wg-avtcore/draft-ietf-avtcore-hevc-webrtc",
+		"ietf-wg-avtcore/id-abs-capture-timestamp",
+		"ietf-wg-avtcore/draft-ietf-avtcore-rtp-v3c",
+		"ietf-wg-avtcore/sdp-roq",
+		"ietf-wg-avtcore/draft-ietf-avtcore-rtp-sframe"
             ],
             "topic": "AVTCORE Working Group GitHub Activity Summary"
         }
@@ -429,7 +461,7 @@
 		"ietf-wg-dnsop/draft-ietf-dnsop-structured-dns-error",
 		"ietf-wg-dnsop/draft-ietf-dnsop-qdcount-is-one",
 		"ietf-wg-dnsop/draft-ietf-dnsop-algorithm-update",
-		"ietf-wg-dnsop/draft-ietf-dnsop-must-not-sha1", 
+		"ietf-wg-dnsop/draft-ietf-dnsop-must-not-sha1",
 		"ietf-wg-dnsop/draft-ietf-dnsop-must-not-gost",
 		"ietf-wg-dnsop/draft-ietf-dnsop-grease",
 	 	"ietf-wg-dnsop/DNSOP_Doc_Tracker"
@@ -470,14 +502,6 @@
             "topic": "TSV Working Group GitHub Activity Summary"
         }
     },
-	"sadcdn@ietf.org": {
-        "digest:sunday": {
-            "repos": [
-                "mjoras/SCONE-PROTOCL"
-            ],
-            "topic": "SCONEPRO BOF GitHub Activity Summary"
-        }
-    },
     "oauth@ietf.org": {
         "digest:sunday": {
             "eventFilter": {
@@ -494,8 +518,13 @@
                 "oauth-wg/oauth-cross-device-security",
                 "oauth-wg/oauth-selective-disclosure-jwt",
                 "oauth-wg/oauth-v2-1",
-		"oauth-wg/draft-ietf-oauth-status-list",
-		"oauth-wg/draft-ietf-oauth-attestation-based-client-auth"
+                "oauth-wg/draft-ietf-oauth-status-list",
+                "oauth-wg/draft-ietf-oauth-attestation-based-client-auth",
+				"oauth-wg/oauth-identity-assertion-authz-grant",
+				"oauth-wg/draft-ietf-oauth-rfc8725bis",
+				"oauth-wg/draft-ietf-oauth-rfc7523bis",
+				"oauth-wg/oauth-first-party-apps",
+				"oauth-wg/draft-ietf-oauth-client-id-metadata-document"
             ],
             "topic": "OAuth Activity Summary"
         }
@@ -607,11 +636,11 @@
                 ]
             },
             "repos": [
-                "ietf-wg-wimse/draft-ietf-wimse-workload-identity-bcp",
+                "ietf-wg-wimse/draft-ietf-wimse-workload-identity-practices",
                 "ietf-wg-wimse/draft-ietf-wimse-arch",
                 "ietf-wg-wimse/draft-ietf-wimse-s2s-protocol"
             ],
-            "topic": "WISME Weekly GitHub Activity Summary"
+            "topic": "WIMSE Weekly GitHub Activity Summary"
         }
     },
     "scitt@ietf.org": {
@@ -641,7 +670,7 @@
 		"ietf-wg-nmop/draft-ietf-nmop-network-anomaly-architecture",
 		"ietf-wg-nmop/draft-ietf-nmop-digital-map-concept",
 		"ietf-wg-nmop/draft-ietf-nmop-network-anomaly-lifecycle",
-		"ietf-wg-nmop/draft-ietf-nmop-network-anomaly-semantics"    
+		"ietf-wg-nmop/draft-ietf-nmop-network-anomaly-semantics"
             ],
             "topic": "NMOP Weekly Github Activity Summary"
         }
@@ -653,7 +682,8 @@
             },
             "repos": [
                 "ietf-wg-cats/draft-ietf-cats-usecases-requirements",
-		"ietf-wg-cats/draft-ietf-cats-framework"
+		"ietf-wg-cats/draft-ietf-cats-framework",
+		"ietf-wg-cats/draft-ietf-cats-metric-definition"
             ],
             "topic": "CATS Weekly Github Activity Summary"
         }
@@ -695,37 +725,49 @@
 	}
     },
     "spasm@ietf.org": {
-	"digest:sunday": {
-	    "eventFilter": {
-                "notlabel": []
-	    },
-	    "repos": [
-		"lamps-wg/8410-ku-clarifications",
-		"lamps-wg/cmcbis",
-		"lamps-wg/cmp-updates",
-		"lamps-wg/cms-kemri",
-		"lamps-wg/cms-kyber",
-		"lamps-wg/csr-attestation",
-		"lamps-wg/csr-attestation-examples",
-		"lamps-wg/dilithium-certificates",
-		"lamps-wg/documentsigning-eku",
-		"lamps-wg/draft-composite-kem",
-		"lamps-wg/draft-composite-kem-old",
-		"lamps-wg/draft-composite-sigs",
-		"lamps-wg/draft-ietf-lamps-5480-ku-clarifications",
-		"lamps-wg/key-attestation-ext",
-		"lamps-wg/kyber-certificates",
-		"lamps-wg/lamps-attestation-freshness",
-		"lamps-wg/lamps-rfc7030-csrattrs",
-		"lamps-wg/RFC5019bis",
-		"lamps-wg/RFC5990bis",
-		"lamps-wg/smime",
-		"lamps-wg/SMIME-Examples",
-		"lamps-wg/x509-shbs",
-		"lamps-wg/x509-slhdsa"
-	    ],
-	    "topic": "LAMPS Weekly Github Activity Summary"
-	}
+	    "digest:sunday": {
+	        "eventFilter": {
+                    "notlabel": []
+	        },
+	        "repos": [
+		        "lamps-wg/8410-ku-clarifications",
+		        "lamps-wg/automation-keyusages",
+		        "lamps-wg/certificatediscovery",
+		        "lamps-wg/cmcbis",
+		        "lamps-wg/cmp-updates",
+				"lamps-wg/cms-composite-kem",
+				"lamps-wg/cms-composite-sigs",
+				"lamps-wg/cms-euf-cma-signeddata",
+				"lamps-wg/cms-fn-dsa",
+		        "lamps-wg/cms-kemri",
+		        "lamps-wg/cms-kyber",
+				"lamps-wg/cms-ml-dsa",
+		        "lamps-wg/csr-attestation",
+		        "lamps-wg/csr-attestation-examples",
+		        "lamps-wg/dilithium-certificates",
+		        "lamps-wg/documentsigning-eku",
+		        "lamps-wg/draft-composite-kem",
+		        "lamps-wg/draft-composite-kem-old",
+		        "lamps-wg/draft-composite-sigs",
+		        "lamps-wg/draft-ietf-lamps-5480-ku-clarifications",
+				"lamps-wg/draft-ietf-lamps-one-signature-certs",
+                "lamps-wg/fn-dsa-certificates",
+				"lamps-wg/key-attestation-ext",
+		        "lamps-wg/kyber-certificates",
+		        "lamps-wg/lamps-attestation-freshness",
+				"lamps-wg/lamps-est-renewal-info",
+		        "lamps-wg/lamps-rfc7030-csrattrs",
+		        "lamps-wg/pkcs8-PriKeyInfoCt",
+		        "lamps-wg/RFC5019bis",
+		        "lamps-wg/RFC5990bis",
+		        "lamps-wg/smime",
+		        "lamps-wg/SMIME-Examples",
+		        "lamps-wg/smime-v5",
+				"lamps-wg/x509-shbs",
+		        "lamps-wg/x509-slhdsa"
+	        ],
+	        "topic": "LAMPS Weekly Github Activity Summary"
+	    }
     },
     "spice@ietf.org": {
         "digest:sunday": {
@@ -736,7 +778,10 @@
             },
             "repos": [
                 "ietf-wg-spice/draft-ietf-spice-sd-cwt",
-		"ietf-wg-spice/draft-ietf-spice-use-cases"
+				"ietf-wg-spice/draft-ietf-spice-use-cases",
+				"ietf-wg-spice/draft-ietf-spice-oidc-cwt",
+				"ietf-wg-spice/draft-ietf-spice-glue-id",
+				"ietf-wg-spice/vdcarch"
             ],
             "topic": "SPICE Weekly GitHub Activity Summary"
         }
@@ -749,11 +794,20 @@
                 ]
             },
             "repos": [
-                "SIDN/ietf-wg-rpp-charter",
-		"SIDN/ietf-epp-restful-json",
-		"SIDN/ietf-epp-restful-transport"    
+        		"ietf-wg-rpp/draft-ietf-rpp-requirements",
+				"ietf-wg-rpp/draft-ietf-rpp-architecture",
+				"ietf-wg-rpp/draft-ietf-rpp-data-objects",
+				"ietf-wg-rpp/draft-ietf-rpp-core",
+				"ietf-wg-rpp/draft-ietf-rpp-json",
+				"SIDN/ietf-rpp-oauth2",
+				"SIDN/ietf-rpp-oauth2-transfer",
+				"SIDN/ietf-rpp-oauth2-delegation",
+				"SIDN/ietf-rpp-jscontact-profile",
+                "SIDN/ietf-rpp-extension-guidelines",
+                "SIDN/ietf-rpp-extension-idn-variants",
+                "SIDN/ietf-rpp-multi-party-authorization"
             ],
-            "topic": "RPP Weekly GitHub Activity Summary"
+            "topic": "RPP WG Weekly GitHub Activity Summary"
         }
     },
     "suit@ietf.org": {
@@ -772,6 +826,178 @@
 		"suit-wg/suit-mti"
             ],
             "topic": "SUIT Weekly GitHub Activity Summary"
+        }
+    },
+    "mimi@ietf.org": {
+    	"digest:sunday": {
+             "eventFilter": {
+            	"notlabel": []
+              },
+              "repos": [
+            	"ietf-wg-mimi/mimi-arch",
+            	"ietf-wg-mimi/mimi-room-policy",
+            	"ietf-wg-mimi/mimi-protocol",
+            	"ietf-wg-mimi/mimi-draft-ietf-mimi-content"
+              ],
+              "topic": "MIMI Weekly Github Activity Summary"
+        }
+    },
+    "mod-discuss@ietf.org": {
+    	"digest:sunday": {
+             "eventFilter": {
+                "notlabel": [
+                    "editorial", "Editorial", "dependencies", "github_actions"
+                ]
+              },
+              "repos": [
+            	"larseggert/draft-ietf-modpod-group-processes"
+              ],
+              "topic": "MODPOD Weekly Github Activity Summary"
+        }
+    },
+    "media-types@ietf.org": {
+        "digest:sunday": {
+            "eventFilter": {
+                "notlabel": [
+                    "editorial"
+                ]
+            },
+            "repos": [
+                "ietf-wg-mediaman/admin",
+		"ietf-wg-mediaman/6838bis",
+		"ietf-wg-mediaman/procedures"
+	    ],
+            "topic": "MEDIAMAN Activity Summary"
+	}
+    },
+    "t2trg@irtf.org": {
+        "digest:sunday": {
+            "eventFilter": {
+                "notlabel": [
+                    "editorial"
+                ]
+            },
+            "repos": [
+                "t2trg/draft-irtf-t2trg-taxonomy-manufacturer-anchors",
+                "t2trg/t2trg-rest-iot",
+                "t2trg/security-setup-iot-devices",
+                "t2trg/t2trg-amplification-attacks"
+             ],
+            "topic": "T2TRG Activity Summary"
+        }
+    },
+    "dd@ietf.org": {
+        "digest:sunday": {
+            "repos": [
+		"ietf-wg-deleg/draft-ietf-deleg-base",
+		"ietf-wg-deleg/draft-ietf-deleg-requirements"
+            ],
+            "topic": "DELEG Working Group GitHub Activity Summary"
+        }
+    },
+    "happy@ietf.org": {
+        "digest:sunday": {
+            "repos": [
+                "ietf-wg-happy/wg-materials",
+                "ietf-wg-happy/draft-happy-eyeballs-v3"
+            ],
+            "topic": "HAPPY GitHub Activity Summary"
+        }
+    },
+    "procon@ietf.org": {
+	"digest:sunday": {
+	    "eventFilter": {
+                "notlabel": [ "hold" ]
+	    },
+	    "repos": [
+		"ietf-wg-procon/2026bis",
+		"ietf-wg-procon/2418bis",
+		"ietf-wg-procon/ietf-chair-may-delegate"
+	    ],
+	    "topic": "PROCON GitHub Activity Summary"
+	}
+    },
+    "sidrops@ietf.org": {
+	"digest:sunday": {
+	    "repos": [
+		"ietf-wg-sidrops/charter"
+	    ],
+	    "topic": "SIDROps GitHub Charter Activity Summary"
+	}
+    },
+    "ocm@ietf.org": {
+        "digest:sunday": {
+	    "eventFilter": {
+                "notlabel": []
+	    },
+            "repos": [
+                "cs3org/OCM-API"
+            ],
+            "topic": "OCM GitHub Activity Summary"
+        }
+    },
+    "web-bot-auth@ietf.org": {
+        "digest:sunday": {
+            "eventFilter": {
+                "notlabel": ["editorial"]
+            },
+            "repos": [
+                "webbotauth/draft-ietf-webbotauth-httpsig-protocol"
+            ],
+            "topic": "Web Bot Auth GitHub Activity Summary"
+        }
+    }
+,
+    "json-structure@ietf.org": {
+        "digest:sunday": {
+            "eventFilter": {
+                "notlabel": ["editorial"]
+            },
+            "repos": [
+                "json-structure/core",
+                "json-structure/validation",
+                "json-structure/import",
+                "json-structure/units",
+                "json-structure/alternate-names",
+                "json-structure/conditional-composition",
+                "json-structure/relations",
+                "json-structure/sdk",
+                "json-structure/site",
+                "json-structure/primer-and-samples",
+                "json-structure/meta"
+            ],
+            "topic": "JSON Structure Activity Summary"
+        }
+    },
+    "jose@ietf.org":{
+        "digest:sunday":{
+            "repos":[
+                "ietf-wg-jose/draft-ietf-jose-hpke-encrypt",
+                "ietf-wg-jose/draft-ietf-jose-pq-composite-sigs",
+                "ietf-wg-jose/json-web-proof"
+            ],
+            "topic": "JOSE WG GitHub Activity Summary"
+        }
+    },
+    "diem@ietf.org": {
+        "digest:sunday": {
+            "eventFilter": {
+                "notlabel": [
+                    "editorial"
+                ]
+            },
+            "repos": [
+                "ietf-wg-diem/diem-requirements"
+            ],
+            "topic": "DIEM WG GitHub Activity Summary"
+        }
+    },
+    "plants@ietf.org": {
+        "digest:sunday": {
+            "repos": [
+                "ietf-plants-wg/merkle-tree-certs"
+            ],
+            "topic": "PLANTS WG GitHub Activity Summary"
         }
     }
 }
