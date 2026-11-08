@@ -1,0 +1,28 @@
+"oauth-wg@ietf.org": {                         <-- your group's e-mail address
+    "digest:sunday": {                     <-- must be "digest:sunday"
+        "eventFilter": {                   <-- optional section to filter the issue labels
+            "notlabel": [
+                "editorial"
+            ]
+        },
+        "repos": [                         <-- list of repos to watch
+            "
+https://github.com/oauth-wg/oauth-browser-based-apps
+ https://github.com/oauth-wg/oauth-identity-chaining
+ https://github.com/oauth-wg/oauth-transaction-tokens
+ https://github.com/oauth-wg/oauth-sd-jwt-vc
+ https://github.com/oauth-wg/draft-ietf-oauth-resource-metadata
+ https://github.com/oauth-wg/oauth-cross-device-security
+ https://github.com/oauth-wg/oauth-selective-disclosure-jwt
+ https://github.com/oauth-wg/oauth-v2-1
+ https://github.com/oauth-wg/draft-ietf-oauth-status-list
+ https://github.com/oauth-wg/draft-ietf-oauth-attestation-based-client-auth
+ https://github.com/oauth-wg/oauth-identity-assertion-authz-grant
+ https://github.com/oauth-wg/draft-ietf-oauth-rfc8725bis
+ https://github.com/oauth-wg/draft-ietf-oauth-rfc7523bis
+ https://github.com/oauth-wg/oauth-first-party-apps
+ https://github.com/oauth-wg/draft-ietf-oauth-client-id-metadata-document
+        ],
+        "topic": "oauth-wg Activity Summary"   <-- subject for the summary
+    }
+}
